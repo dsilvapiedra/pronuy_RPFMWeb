@@ -12,32 +12,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="images/logos/pronuy.svg" type="image/x-icon">
+	<!--	<script src="assets/js/map.js"></script> -->
+
 </head>
 
 <body class="homepage is-preload">
 	<div id="page-wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo container">
-				<div>
-					<h1><a href="index.html" id="logo">PronUy_RPFM</a></h1> </br>
-
-					<p>PRONÓSTICO DE NIVELES PARA EL RÍO DE LA PLATA Y COSTA URUGUAYA</p>
-				</div>
-
-			</div>
-			<div id="todaysDate" style="
-			font-size: 80%; margin-top: 5px;
-		"></div>
-
-		</header>
-
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><img style="cursor: pointer; width: 25px; height: 25px" src="images/logos/pronuy.svg"
-						onclick="window.open('index.html' ,'_self');" /></li>
+				<li id="pronuyLogo" style="transition:none"><a href="#" style="transition:none;	padding-right: 0;"> <img
+							style="cursor: pointer;width: 45px;
+							height: 45px;
+							vertical-align: middle; " src="images/logos/pronuy.svg" /> </a> </li>
+				<li><a href="#" style="text-transform:none; "> PronUy_RPFM </a> </li>
 				<li><a href="#mareografos">Series Temporales</a></li>
 				<li><a href="#estadistico">Resumen Estadístico</a></li>
 				<li><a href="#pronostico">Campos</a></li>
@@ -45,22 +34,42 @@
 			</ul>
 		</nav>
 
-		<!-- Banner -->
 		<section id="banner">
 			<div class="container">
 				<div class="col-8">
+
+					<header id="header" style="background:none">
+						<div class="logo container" style="border:none">
+							<div style="background:none">
+								<!--		<h1 style="  color: #a2a2a2;
+								text-shadow: 1px 1px 1px #000;"><a href="index.html" id="logo">PronUy_RPFM</a></h1> </br>
+-->
+								<p style="color: #000; text-shadow: 1px 1px 1px #A4A4A4;">PRONÓSTICO DE NIVELES PARA EL
+									RÍO DE LA PLATA Y COSTA URUGUAYA</p>
+							</div>
+
+						</div>
+						<!--	<div id="todaysDate" style="  color: #a2a2a2;
+						text-shadow: 1px 1px 1px #000;
+						font-size: 80%; margin-top: -15px; padding-bottom: 15px;
+					"></div>-->
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Banner 	-->
+		<section id="mainImg">
+			<div class="container">
+				<div class="col-8">
 					<p style="text-align: center; margin-bottom: 0;">
-						<img style="width: 55%; text-align: center;	" src="images/satelite.jpg">
+
+						<img style="width: 100%; text-align: center;	border-radius: 10%;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;"
+							src="images/satelital.jpeg">
 					</p>
 				</div>
 			</div>
-			<!--
-					<div id="mareografos" class="content">
-						<h2>Bienvenidos</h2>
-						<p>Aquí se encuentran todos los mareógrafos disponibles</p>
-						<a href="#main" class="button scrolly">Alright let's go</a>
-					</div>
-					-->
+
 		</section>
 
 		<!-- Main -->
@@ -237,15 +246,22 @@
 						<section>
 							<h2 class="major"><span>Quiénes somos</span></h2>
 							<p style="text-align: justify">
-								El equipo de investigadores que trabaja en la simulación numérica de la hidrodinámica
-								del Río de la Plata y su Frente Marítimo, RPFM, es un grupo mixto multidisciplinario e
-								integra investigadores del Instituto de Mecánica de los Fluidos e Ingeniería Ambiental,
-								IMFIA, y del Instituto de Computación, INCO; incluyendo las temáticas de mecánica de los
-								fluidos, hidráulica marítima, métodos numéricos y computación de alto desempeño (HPC).
+								El equipo de investigadores que trabaja en la simulación numérica de la
+								hidrodinámica
+								del Río de la Plata y su Frente Marítimo, RPFM, es un grupo mixto multidisciplinario
+								e
+								integra investigadores del Instituto de Mecánica de los Fluidos e Ingeniería
+								Ambiental,
+								IMFIA, y del Instituto de Computación, INCO; incluyendo las temáticas de mecánica de
+								los
+								fluidos, hidráulica marítima, métodos numéricos y computación de alto desempeño
+								(HPC).
 							</p>
 							<p style="text-align: justify">
-								Nuestro grupo se ha consolidado en la última década a través del desarrollo de proyectos
-								que incluyeron la aplicación de diversos modelos numéricos en la región para distintas
+								Nuestro grupo se ha consolidado en la última década a través del desarrollo de
+								proyectos
+								que incluyeron la aplicación de diversos modelos numéricos en la región para
+								distintas
 								aplicaciones de ingeniería hidráulica (sedimentos finos, estudios portuarios, cambio
 								climático, transporte de sustancias, pronóstico en tiempo real) mejorando así la
 								comprensión de la dinámica global de flujo en el Río de la Plata y Frente Marítimo.
@@ -315,6 +331,7 @@
 	<script src="assets/js/time.js"></script>
 	<script src="assets/js/mareas_slider.js"></script>
 	<script src="assets/js/accordion.js"></script>
+
 </body>
 
 </html>

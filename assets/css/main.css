@@ -10,21 +10,117 @@
 /************************Custom rules****************************/
 
 #header {
-  padding: 3em 0 1em 0 !important;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3em 0 0em 0 !important;
+  background: #fff;
+  margin: 0 auto;
+ 
 }
-
 #header .logo div {
   top: -1.99em !important;
 }
-/*
-.logo.container {
-  max-height: 35px;
-}*/
+
 a#logo {
   text-transform: none;
   line-height: 1.5;
 }
+/* Nav */
+#nav {
+  box-shadow: rgba(0, 0, 0, 0.64) 0px 1px 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  /*background-image: url("images/overlay.png");*/
+  width: 100%;
+  height: 4.25em;
+  line-height: 4.25em;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: default;
+}
+#nav #pronuyLogo:hover a, #nav li:hover span {
+  background: transparent !important; 
 
+}
+#pronuyLogo:hover {color: transparent !important;
+  animation: none !important;
+  transition: none !important;
+  background: transparent !important; 
+  top: 0 !important;
+}
+#pronuyLogo a:hover { 
+  background: transparent !important; 
+
+}
+#pronuyLogo:hover  a { 
+  color: transparent !important; 
+
+}
+/*
+#banner {
+  background-image: url("../../images/logos/pronuy.svg") !important;
+  background-size: min(12%,180px);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+*/
+/* Img satelite */
+#mainImg {
+  position: relative;
+  padding-top: 1em
+}
+#mainImg .content {
+  position: relative;
+  background-color: rgba(21, 28, 23, 0.85);
+  background-image: url("images/overlay.png"), url("images/highlight.png");
+  background-position: top left, center center;
+  background-size: auto, 100% 250%;
+  background-repeat: repeat, no-repeat;
+  text-align: center;
+  margin: 0;
+  padding: 4em 0 3.5em 0;
+}
+#mainImg .content h2 {
+  color: #fff;
+  font-size: 2.75em;
+  margin: 0 0 0.5em 0;
+}
+#mainImg .content p {
+  display: block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #575d59;
+  font-size: 1.35em;
+  margin: 0 0 1.25em 0;
+}
+#mainImg .content .button {
+  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #b4b7b5;
+  background: transparent !important;
+  border: solid 4px #575d59;
+  border-color: rgba(87, 93, 89, 0.35);
+  font-size: 1.5em;
+}
+#mainImg .content .button:hover {
+  color: #e4e7e5;
+  border-color: rgba(87, 93, 89, 0.75);
+}
+#mainImg .content .button:active {
+  color: #fff;
+  border-color: #616763;
+}
 
 /**** Accordion settings ***/
 .accordion {
@@ -76,7 +172,6 @@ a#logo {
 
 .panel img {
   max-width: 100%;
-
 }
 
 /* Footer */
@@ -2035,6 +2130,7 @@ table.default thead {
 }
 
 /* Header */
+/*
 #header {
   text-align: center;
   font-size: 2em;
@@ -2044,7 +2140,7 @@ table.default thead {
   padding: 2em 0;
   background: #fff;
   margin: 0 auto;
-}
+}*/
 #header .logo {
   position: relative;
   text-align: center;
@@ -2070,7 +2166,7 @@ table.default thead {
 body {
   padding-top: 3.25em;
 }
-
+/*
 #nav {
   position: fixed;
   top: 0;
@@ -2086,7 +2182,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   cursor: default;
-}
+}*/
 #nav ul {
   position: relative;
   z-index: 1001;
