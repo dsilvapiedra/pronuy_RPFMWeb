@@ -8,17 +8,28 @@
 */
 
 /************************Custom rules****************************/
+#logosUd {
+  height:6em; 
+  position: relative;
+  margin-left: auto;
+}
 
+#logosUd > a:first-child{
+padding-right:  20px !important;
+
+}
 #header {
+  min-height: 100%;
+  display: inline-flex;
+  align-items: center;
   text-align: center;
   font-size: 2em;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 3em 0 0em 0 !important;
+  /* padding: 3em 0 0em 0 !important; */
   background: #fff;
-  margin: 0 auto;
- 
+  /* margin: 0 auto; */
 }
 #header .logo div {
   top: -1.99em !important;
@@ -27,6 +38,64 @@
 a#logo {
   text-transform: none;
   line-height: 1.5;
+}
+/* Hiding Banner */
+
+#hidingBanner {
+  /* position: absolute; */
+  padding: 0;
+  top: 0;
+  object-fit: contain;
+  /* width: 100%; */
+}
+#hidingBanner .col, #hidingBanner .col-1,#hidingBanner .col-2, #hidingBanner .col-3, #hidingBanner .col-6, #hidingBanner .col-7 {
+ padding-top: 0;
+ padding-bottom: 0;
+}
+/* Navbar */
+#navbar {
+  z-index: 100;
+  background-color: #3d3d3d;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+
+  box-shadow: inset 0px -5px 0px 0px rgb(0 0 0);
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+#navbar .container {
+  min-height: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#navbar a:hover {
+  background-color: #e4e7e5;
+  color: black;
+  border-radius:   3px;
+  top: 3px;
+
+ 
 }
 /* Nav */
 #nav {
@@ -46,36 +115,28 @@ a#logo {
   text-transform: uppercase;
   cursor: default;
 }
-#nav #pronuyLogo:hover a, #nav li:hover span {
-  background: transparent !important; 
-
+#nav #pronuyLogo:hover a,
+#nav li:hover span {
+  background: transparent !important;
 }
-#pronuyLogo:hover {color: transparent !important;
+#pronuyLogo:hover {
+  color: transparent !important;
   animation: none !important;
   transition: none !important;
-  background: transparent !important; 
+  background: transparent !important;
   top: 0 !important;
 }
-#pronuyLogo a:hover { 
-  background: transparent !important; 
+#pronuyLogo a:hover {
+  background: transparent !important;
+}
+#pronuyLogo:hover a {
+  color: transparent !important;
+}
 
-}
-#pronuyLogo:hover  a { 
-  color: transparent !important; 
-
-}
-/*
-#banner {
-  background-image: url("../../images/logos/pronuy.svg") !important;
-  background-size: min(12%,180px);
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-*/
 /* Img satelite */
 #mainImg {
   position: relative;
-  padding-top: 1em
+  padding-top: 1em;
 }
 #mainImg .content {
   position: relative;
@@ -2292,7 +2353,7 @@ body {
 }
 
 /* Banner */
-#banner {
+/* #banner {
   position: relative;
   /*
   background-image: url('../../images/satelite.jpg');
@@ -2302,7 +2363,7 @@ body {
   z-index: 1;
   padding: 19.5em 0;
   */
-}
+} */
 #banner .content {
   position: relative;
   background-color: rgba(21, 28, 23, 0.85);

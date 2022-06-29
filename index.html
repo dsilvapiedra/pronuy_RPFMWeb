@@ -10,7 +10,8 @@
 	<title>Pronóstico de niveles para el Río de la Plata</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Pronóstico de niveles de marea en tiempo real para el Río de la Plata y Frente Marítimo." />
+	<meta name="description"
+		content="Pronóstico de niveles de marea en tiempo real para el Río de la Plata y Frente Marítimo." />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="images/logos/pronuy.svg" type="image/x-icon">
 	<!--	<script src="assets/js/map.js"></script> -->
@@ -20,305 +21,329 @@
 <body class="homepage is-preload">
 	<div id="page-wrapper">
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li id="pronuyLogo" style="transition:none"><a href="index.html"
-						style="transition:none;	padding-right: 0;"> <img style="cursor: pointer;width: 63px;
-							height: 63px;
-							vertical-align: middle; " src="images/logos/pronuy.svg" /> </a> </li>
-				<li><a href="index.html" style="text-transform:none; "> PronUy_RPFM </a> </li>
-				<li><a href="#mareografos">Series Temporales</a></li>
-				<li><a href="#estadistico">Resumen Estadístico</a></li>
-				<li><a href="#pronostico">Campos</a></li>
-				<li><a href="#quienes">Quiénes somos</a></li>
-			</ul>
-		</nav>
+		<!-- Banner 	-->
+		<div id="hidingBanner" class="container">
+			<!-- <section id="hidingBanner"> -->
 
-		<section id="banner">
-			<div class="container">
-				<div class="col-8">
+			<div class="row">
+				<div class="col" style="
+					display: flex;
+					align-items : center;">
+					<div id="pronuyLogo" style="transition:none;  margin-left: auto;">
+						<a href="index.html" style="transition:none;	padding-right: 0;   ">
+							<img style="cursor: pointer;width: 7em;
+							height: 7em; padding: 2px;
+							vertical-align: middle; " src="images/logos/pronuy.svg" /> </a>
+					</div>
 
+				</div>
+				<div class="col" style="     padding-left: 1.1em;
+					display: flex;
+					align-items : center;">
 					<header id="header" style="background:none">
-						<div class="logo container" style="border:none">
-							<div style="background:none">
-								<!--		<h1 style="  color: #a2a2a2;
-								text-shadow: 1px 1px 1px #000;"><a href="index.html" id="logo">PronUy_RPFM</a></h1> </br>
--->
-								<p style="color: #000; text-shadow: 1px 1px 1px #A4A4A4;"><span id="titulo"> PRONÓSTICO
-										DE NIVELES PARA EL
-										RÍO DE LA PLATA Y COSTA URUGUAYA</span></p>
-							</div>
+
+						<div class="col">
+							<p id="titulo"
+								style="top: -4px;
+								position: relative;font-size:22px; text-align: left;color: #000; text-shadow: 1px 1px 1px #A4A4A4;     white-space: pre-line; margin-bottom: 0.0em">
+								PRONÓSTICODE NIVELES
+								RÍO DE LA PLATA Y COSTA URUGUAYA</p>
+							<p style="    text-align: left; font-size:19px;
+							color: #979797;
+							text-shadow:1px 1px 0px #54545433; margin-bottom: 0.5em">
+								PronUy_RPFM
+							</p>
 
 						</div>
-						<!--	<div id="todaysDate" style="  color: #a2a2a2;
-						text-shadow: 1px 1px 1px #000;
-						font-size: 80%; margin-top: -15px; padding-bottom: 15px;
-					"></div>-->
-
+					</header>
 				</div>
-			</div>
-		</section>
-
-		<!-- Banner 	-->
-		<section id="mainImg">
-			<div class="container">
-				<div class="col-8">
-					<p style="text-align: center; margin-bottom: 0;">
-
-						<img style="width: 100%; text-align: center;	border-radius: 10%;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;"
-							src="images/satelital.jpeg">
-					</p>
-				</div>
-			</div>
-
-		</section>
-
-		<!-- Main -->
-		<section id="main">
-			<div class="container">
-				<div id="mareografos" class="row gtr-200">
-					<div class="col-12">
-
-						<!-- Mareógrafos -->
-						<section class="box features">
-							<h2 class="major"><span>Series Temporales</span></h2>
-							<!-- Mareógrafos Accordion-->
-							<!-- ANP -->
-							<div class="col-12">
-
-								<section class="box features">
-									<h3><i><a target="_blank" href="http://mareografo.anp.com.uy/index.php"
-												style="text-decoration:underline">Datos ANP
-												Uruguay</a></i></h3>
-									<button class="accordion">
-										<h4>Isla de Flores </h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/IdF.jpg"
-											onclick="window.open('images/mareografos/IdF.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>Montevideo</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/MVD.jpg"
-											onclick="window.open('images/mareografos/MVD.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>La Paloma</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/LPa.jpg"
-											onclick="window.open('images/mareografos/LPa.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>Colonia</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/Col.jpg"
-											onclick="window.open('images/mareografos/Col.jpg', '_blank');" />
-									</div>
-								</section>
-							</div>
-
-
-							<!-- SHN -->
-							<div class="col-12" style="margin-top: 30px">
-
-								<section class="box features">
-									<h3><i><a target="_blank"
-												href="http://www.hidro.gob.ar/oceanografia/alturashorarias.asp"
-												style="text-decoration:underline">Datos
-												SHN Argentina</a></i></h3>
-									<button class="accordion">
-										<h4>Atalaya</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/Aty.jpg"
-											onclick="window.open('images/mareografos/Aty.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>Buenos Aires</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/BAs.jpg"
-											onclick="window.open('images/mareografos/BAs.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>Mar del Plata</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/MdP.jpg"
-											onclick="window.open('images/mareografos/MdP.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>Pilote Norden</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/PNr.jpg"
-											onclick="window.open('images/mareografos/PNr.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>San Clemente</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/SCl.jpg"
-											onclick="window.open('images/mareografos/SCl.jpg', '_blank');" />
-									</div>
-
-									<button class="accordion">
-										<h4>Torre Oyarvide</h4>
-									</button>
-									<div class="panel">
-										<img src="images/mareografos/TOy.jpg"
-											onclick="window.open('images/mareografos/TOy.jpg', '_blank');" />
-									</div>
-								</section>
-							</div>
-						</section>
-
-					</div>
-
-
-
-
-
-
-					<div id="estadistico" class="col-12">
-
-						<!-- Estadísticos -->
-						<section class="box features">
-							<h2 class="major"><span>Resumen Estadístico</span></h2>
-							<p style="text-align: center;">
-								<img style="max-height: 700px; max-width: 100%;"
-									src="images/resumen_estadisticos/figure_Barras.jpg">
-							</p>
-						</section>
-					</div>
-
-					<div id="pronostico" style="padding-top: 0;" class="col-12">
-						<section class="box">
-							<h2 class="major"><span>Campos</span></h2>
-							<p style="text-align: center;">
-								<img id="slider-img" style="max-height: 400px; max-width: 100%;"
-									src="images/corrientes/figure_video_1.jpg">
-							<div class="row">
-								<div class="col-2">
-									<button type="button" id="fastback" onclick="fastbackSlider()">&lt;&lt;</button>
-								</div>
-								<div class="col-2">
-									<button type="button" id="back" onclick="backSlider()">&lt;</button>
-								</div>
-								<div class="col-2">
-									<button type="button" id="play" onclick="playSlider()">►</button>
-								</div>
-								<div class="col-2">
-									<button type="button" id="pause" onclick="pauseSlider()">| |</button>
-								</div>
-								<div class="col-2">
-									<button type="button" id="forward" onclick="forwardSlider()">&gt;</button>
-								</div>
-								<div class="col-2">
-									<button type="button" id="fastforward"
-										onclick="fastforwardSlider()">&gt;&gt;</button>
-								</div>
-							</div>
-							</p>
-						</section>
+				<div class="col-7" style="display: flex; align-items : center;">
+					<div id="logosUd">
+						<a href="https://www.fing.edu.uy/" style="transition:none;	padding-right: 0;  text-decoration: none;  ">
+							<img style="height:100% ;cursor: pointer;padding: 2px;vertical-align: middle;"
+								src="images/logos/fing_sinfondo.png" /></a>
+						<a href="https://www.fing.edu.uy/" style="transition:none;	padding-right: 0;  text-decoration: none;  ">
+							<img style="height:100%;cursor: pointer;padding: 2px;vertical-align:
+							 middle; " src="images/logos/udelar_sinfondo.png" />
+						</a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="container">
-				<div id="quienes" class="row gtr-200">
-					<div class="col-12">
+		<!-- </section> -->
+	</div>
 
-						<!-- About -->
-						<section>
-							<h2 class="major"><span>Quiénes somos</span></h2>
-							<p style="text-align: justify">
-								El equipo de investigadores que trabaja en la simulación numérica de la
-								hidrodinámica
-								del Río de la Plata y su Frente Marítimo, RPFM, es un grupo mixto multidisciplinario
-								e
-								integra investigadores del Instituto de Mecánica de los Fluidos e Ingeniería
-								Ambiental,
-								IMFIA, y del Instituto de Computación, INCO; incluyendo las temáticas de mecánica de
-								los
-								fluidos, hidráulica marítima, métodos numéricos y computación de alto desempeño
-								(HPC).
-							</p>
-							<p style="text-align: justify">
-								Nuestro grupo se ha consolidado en la última década a través del desarrollo de
-								proyectos
-								que incluyeron la aplicación de diversos modelos numéricos en la región para
-								distintas
-								aplicaciones de ingeniería hidráulica (sedimentos finos, estudios portuarios, cambio
-								climático, transporte de sustancias, pronóstico en tiempo real) mejorando así la
-								comprensión de la dinámica global de flujo en el Río de la Plata y Frente Marítimo.
-							</p>
-							<p style="text-align: justify">
-								<a href="mailto:pronosticoRPFM@gmail.com">Contacto</a>
-							</p>
-						</section>
+	<!-- Nav -->
+	<nav id="navbar">
+		<div class="container" style="min-height:2em">
+			<a href="index.html"> Inicio </a>
+			<a href="#mareografos">Series Temporales</a>
+			<a href="#estadistico">Resumen Estadístico</a>
+			<a href="#pronostico">Campos</a>
+			<a href="#quienes">Quiénes somos</a>
+		</div>
 
-					</div>
-					<div class="col-12">
+	</nav>
 
-						<!-- Logos -->
-						<section>
-							<div class="row">
-								<div class="col-3 col-6-medium col-12-small">
-									<a target="_blank" href="https://www.fing.edu.uy/imfia/">
-										<p style="text-align: center;">
-											<img style="max-width: 100%; max-height: 100px;"
-												src="images/logos/imfia_sinfondo.png">
-										</p>
-									</a>
+
+
+	<!-- Mapa 	-->
+	<section id="mainImg">
+		<div class="container">
+			<div class="col-8">
+				<p style="text-align: center; margin-bottom: 0;">
+
+					<img style="width: 100%; text-align: center; border-radius: 7px;" src="images/satelital.jpeg">
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Main -->
+	<section id="main">
+		<div class="container">
+			<div id="mareografos" class="row gtr-200">
+				<div class="col-12">
+
+					<!-- Mareógrafos -->
+					<section class="box features">
+						<h2 class="major"><span>Series Temporales</span></h2>
+						<!-- Mareógrafos Accordion-->
+						<!-- ANP -->
+						<div class="col-12">
+
+							<section class="box features">
+								<h3><i><a target="_blank" href="http://mareografo.anp.com.uy/index.php"
+											style="text-decoration:underline">Datos ANP
+											Uruguay</a></i></h3>
+								<button class="accordion">
+									<h4>Isla de Flores </h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/IdF.jpg"
+										onclick="window.open('images/mareografos/IdF.jpg', '_blank');" />
 								</div>
-								<div class="col-3 col-6-medium col-12-small">
-									<a target="_blank" href="https://www.fing.edu.uy/inco/">
-										<p style="text-align: center;">
-											<img style="max-width: 100%; max-height: 100px;"
-												src="images/logos/inco.jpeg">
-										</p>
-									</a>
+
+								<button class="accordion">
+									<h4>Montevideo</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/MVD.jpg"
+										onclick="window.open('images/mareografos/MVD.jpg', '_blank');" />
 								</div>
-								<div class="col-3 col-6-medium col-12-small">
-									<a target="_blank" href="https://www.fing.edu.uy/">
-										<p style="text-align: center;">
-											<img style="max-width: 100%; max-height: 100px;"
-												src="images/logos/fing_sinfondo.png">
-										</p>
-									</a>
+
+								<button class="accordion">
+									<h4>La Paloma</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/LPa.jpg"
+										onclick="window.open('images/mareografos/LPa.jpg', '_blank');" />
 								</div>
-								<div class="col-3 col-6-medium col-12-small">
-									<a target="_blank" href="http://www.universidad.edu.uy/">
-										<p style="text-align: center;">
-											<img style="max-width: 100%; max-height: 100px;"
-												src="images/logos/udelar_sinfondo.png">
-										</p>
-									</a>
+
+								<button class="accordion">
+									<h4>Colonia</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/Col.jpg"
+										onclick="window.open('images/mareografos/Col.jpg', '_blank');" />
 								</div>
+							</section>
+						</div>
+
+
+						<!-- SHN -->
+						<div class="col-12" style="margin-top: 30px">
+
+							<section class="box features">
+								<h3><i><a target="_blank"
+											href="http://www.hidro.gob.ar/oceanografia/alturashorarias.asp"
+											style="text-decoration:underline">Datos
+											SHN Argentina</a></i></h3>
+								<button class="accordion">
+									<h4>Atalaya</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/Aty.jpg"
+										onclick="window.open('images/mareografos/Aty.jpg', '_blank');" />
+								</div>
+
+								<button class="accordion">
+									<h4>Buenos Aires</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/BAs.jpg"
+										onclick="window.open('images/mareografos/BAs.jpg', '_blank');" />
+								</div>
+
+								<button class="accordion">
+									<h4>Mar del Plata</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/MdP.jpg"
+										onclick="window.open('images/mareografos/MdP.jpg', '_blank');" />
+								</div>
+
+								<button class="accordion">
+									<h4>Pilote Norden</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/PNr.jpg"
+										onclick="window.open('images/mareografos/PNr.jpg', '_blank');" />
+								</div>
+
+								<button class="accordion">
+									<h4>San Clemente</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/SCl.jpg"
+										onclick="window.open('images/mareografos/SCl.jpg', '_blank');" />
+								</div>
+
+								<button class="accordion">
+									<h4>Torre Oyarvide</h4>
+								</button>
+								<div class="panel">
+									<img src="images/mareografos/TOy.jpg"
+										onclick="window.open('images/mareografos/TOy.jpg', '_blank');" />
+								</div>
+							</section>
+						</div>
+					</section>
+
+				</div>
+
+
+
+
+
+
+				<div id="estadistico" class="col-12">
+
+					<!-- Estadísticos -->
+					<section class="box features">
+						<h2 class="major"><span>Resumen Estadístico</span></h2>
+						<p style="text-align: center;">
+							<img style="max-height: 700px; max-width: 100%;"
+								src="images/resumen_estadisticos/figure_Barras.jpg">
+						</p>
+					</section>
+				</div>
+
+				<div id="pronostico" style="padding-top: 0;" class="col-12">
+					<section class="box">
+						<h2 class="major"><span>Campos</span></h2>
+						<p style="text-align: center;">
+							<img id="slider-img" style="max-height: 400px; max-width: 100%;"
+								src="images/corrientes/figure_video_1.jpg">
+						<div class="row">
+							<div class="col-2">
+								<button type="button" id="fastback" onclick="fastbackSlider()">&lt;&lt;</button>
 							</div>
-							<h2><span>Con apoyo del Programa CSIC (Grupos I+D)</span></h2>
-						</section>
-
-					</div>
+							<div class="col-2">
+								<button type="button" id="back" onclick="backSlider()">&lt;</button>
+							</div>
+							<div class="col-2">
+								<button type="button" id="play" onclick="playSlider()">►</button>
+							</div>
+							<div class="col-2">
+								<button type="button" id="pause" onclick="pauseSlider()">| |</button>
+							</div>
+							<div class="col-2">
+								<button type="button" id="forward" onclick="forwardSlider()">&gt;</button>
+							</div>
+							<div class="col-2">
+								<button type="button" id="fastforward" onclick="fastforwardSlider()">&gt;&gt;</button>
+							</div>
+						</div>
+						</p>
+					</section>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<div id="quienes" class="row gtr-200">
+				<div class="col-12">
+
+					<!-- About -->
+					<section>
+						<h2 class="major"><span>Quiénes somos</span></h2>
+						<p style="text-align: justify">
+							El equipo de investigadores que trabaja en la simulación numérica de la
+							hidrodinámica
+							del Río de la Plata y su Frente Marítimo, RPFM, es un grupo mixto multidisciplinario
+							e
+							integra investigadores del Instituto de Mecánica de los Fluidos e Ingeniería
+							Ambiental,
+							IMFIA, y del Instituto de Computación, INCO; incluyendo las temáticas de mecánica de
+							los
+							fluidos, hidráulica marítima, métodos numéricos y computación de alto desempeño
+							(HPC).
+						</p>
+						<p style="text-align: justify">
+							Nuestro grupo se ha consolidado en la última década a través del desarrollo de
+							proyectos
+							que incluyeron la aplicación de diversos modelos numéricos en la región para
+							distintas
+							aplicaciones de ingeniería hidráulica (sedimentos finos, estudios portuarios, cambio
+							climático, transporte de sustancias, pronóstico en tiempo real) mejorando así la
+							comprensión de la dinámica global de flujo en el Río de la Plata y Frente Marítimo.
+						</p>
+						<p style="text-align: justify">
+							<a href="mailto:pronosticoRPFM@gmail.com">Contacto</a>
+						</p>
+					</section>
+
+				</div>
+				<div class="col-12">
+
+					<!-- Logos -->
+					<section>
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+								<a target="_blank" href="https://www.fing.edu.uy/imfia/">
+									<p style="text-align: center;">
+										<img style="max-width: 100%; max-height: 100px;"
+											src="images/logos/imfia_sinfondo.png">
+									</p>
+								</a>
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+								<a target="_blank" href="https://www.fing.edu.uy/inco/">
+									<p style="text-align: center;">
+										<img style="max-width: 100%; max-height: 100px;" src="images/logos/inco.jpeg">
+									</p>
+								</a>
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+								<a target="_blank" href="https://www.fing.edu.uy/">
+									<p style="text-align: center;">
+										<img style="max-width: 100%; max-height: 100px;"
+											src="images/logos/fing_sinfondo.png">
+									</p>
+								</a>
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+								<a target="_blank" href="http://www.universidad.edu.uy/">
+									<p style="text-align: center;">
+										<img style="max-width: 100%; max-height: 100px;"
+											src="images/logos/udelar_sinfondo.png">
+									</p>
+								</a>
+							</div>
+						</div>
+						<h2><span>Con apoyo del Programa CSIC (Grupos I+D)</span></h2>
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	</div>
 
