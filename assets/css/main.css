@@ -9,7 +9,7 @@
 
 /************************Custom rules****************************/
 .body{
-  min-width: 600px;
+  min-width: 600px !important;
 }
 .seriesframes{
   height: 800px;
@@ -2620,9 +2620,13 @@ body {
   /* Nav */
   body {
     padding-top: 44px;
+   
   }
   body.homepage {
     padding-top: 0;
+    overflow-x: scroll;
+    min-width: 850px;
+   
   }
 
   #page-wrapper {
