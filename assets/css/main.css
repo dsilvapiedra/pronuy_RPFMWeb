@@ -2583,7 +2583,7 @@ body {
   /* Basic */
   html,
   body {
-    overflow-x: hidden;
+     overflow-x: scroll;
   }
 
   /* Box */
@@ -2624,7 +2624,6 @@ body {
   }
   body.homepage {
     padding-top: 0;
-    overflow-x: scroll;
     min-width: 850px;
    
   }
