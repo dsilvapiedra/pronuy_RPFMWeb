@@ -8,6 +8,38 @@
 */
 
 /************************Custom rules****************************/
+.body{
+  min-width: 600px !important;
+}
+.seriesframes{
+  height: 800px;
+  width: 100%;
+}
+@media screen and (min-width: 980px) {
+  .seriesframes{
+    height: 500px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .seriesframes{
+    height: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .seriesframes{
+    height: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .seriesframes{
+    height: 400px;
+    width: 100%;
+  }
+}
+
 #logosUd {
   height:6em; 
   position: relative;
@@ -2551,7 +2583,7 @@ body {
   /* Basic */
   html,
   body {
-    overflow-x: hidden;
+     overflow-x: scroll;
   }
 
   /* Box */
@@ -2588,9 +2620,12 @@ body {
   /* Nav */
   body {
     padding-top: 44px;
+   
   }
   body.homepage {
     padding-top: 0;
+    min-width: 850px;
+   
   }
 
   #page-wrapper {

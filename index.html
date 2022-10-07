@@ -9,7 +9,7 @@
 <head>
 	<title>Pronóstico de niveles para el Río de la Plata</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description"
 		content="Pronóstico de niveles de marea en tiempo real para el Río de la Plata y Frente Marítimo." />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -130,28 +130,28 @@
 									<h4>Isla de Flores </h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/IdF.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/IdF.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>Montevideo</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/MVD.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/MVD.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>La Paloma</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/LPa.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/LPa.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>Colonia</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/Col.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/Col.html"  class="seriesframes"></iframe>
 								</div>
 							</section>
 						</div>
@@ -169,42 +169,42 @@
 									<h4>Atalaya</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/Aty.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/Aty.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>Buenos Aires</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/BAs.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/BAs.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>Mar del Plata</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/MdP.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/MdP.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>Pilote Norden</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/PNr.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/PNr.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>San Clemente</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/SCl.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/SCl.html"  class="seriesframes"></iframe>
 								</div>
 
 								<button class="accordion">
 									<h4>Torre Oyarvide</h4>
 								</button>
 								<div class="panel">
-									<iframe src="images/mareografos/TOy.html" height="500px" width="100%"></iframe>
+									<iframe src="images/mareografos/TOy.html" class="seriesframes"></iframe>
 								</div>
 							</section>
 						</div>
@@ -346,6 +346,14 @@
 	</div>
 
 	<!-- Scripts -->
+	<script>
+		window.onload = function () {
+			if(window.innerWidth <= 500) {
+				var mvp = document.getElementById('myViewport');
+				mvp.setAttribute('content','width=500');
+			}
+		}
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
