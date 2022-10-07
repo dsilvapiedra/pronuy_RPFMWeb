@@ -9,7 +9,7 @@
 <head>
 	<title>Pronóstico de niveles para el Río de la Plata</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description"
 		content="Pronóstico de niveles de marea en tiempo real para el Río de la Plata y Frente Marítimo." />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -346,6 +346,14 @@
 	</div>
 
 	<!-- Scripts -->
+	<script>
+		window.onload = function () {
+			if(window.innerWidth <= 500) {
+				var mvp = document.getElementById('myViewport');
+				mvp.setAttribute('content','width=500');
+			}
+		}
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
