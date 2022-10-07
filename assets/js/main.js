@@ -55,7 +55,7 @@
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
-						$('#nav').navList() +
+						$('#navbar').navList() +
 					'</nav>' +
 				'</div>'
 			)
