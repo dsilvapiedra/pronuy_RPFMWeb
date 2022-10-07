@@ -8,6 +8,75 @@
 */
 
 /************************Custom rules****************************/
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #3d3d3d;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+ 
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3d3d3d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  background-color: #3d3d3d;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a {
+  width: 100%;
+  margin-top: 4px;
+  border-left: solid 5px black;
+  border-bottom: solid 5px black;
+  
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #e4e7e5;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .body{
   min-width: 600px !important;
 }
@@ -439,6 +508,7 @@ html {
 
 body {
   background: #f2f5f3;
+  overflow-x: hidden;
 }
 body.is-preload *,
 body.is-preload *:before,
