@@ -12,11 +12,16 @@
 .dropdown {
   float: left;
   overflow: hidden;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: inherit;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 13px;
   border: none;
   outline: none;
   color: white;
@@ -496,6 +501,7 @@ html {
 
 body {
   background: #f2f5f3;
+  overflow-x: hidden;
 }
 body.is-preload *,
 body.is-preload *:before,
