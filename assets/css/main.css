@@ -8,8 +8,11 @@
 */
 
 /************************Custom rules****************************/
+.body{
+  min-width: 600px;
+}
 .seriesframes{
-  height: 500px;
+  height: 800px;
   width: 100%;
 }
 @media screen and (min-width: 980px) {
