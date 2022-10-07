@@ -15,25 +15,25 @@
 @media screen and (min-width: 980px) {
   .seriesframes{
     height: 500px;
-    width: 100vw;
+    width: 100%;
   }
 }
 @media screen and (max-width: 980px) {
   .seriesframes{
     height: 400px;
-    width: 100vw;
+    width: 100%;
   }
 }
 @media screen and (max-width: 736px) {
   .seriesframes{
-    height: 350px;
-    width: 100vw;
+    height: 400px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 360px) {
   .seriesframes{
-    height: 250px;
-    width: 100vw;
+    height: 400px;
+    width: 100%;
   }
 }
 
