@@ -57,12 +57,17 @@
   display: block;
   text-align: left;
 }
-.dropdown-content a {
-  width: 100%;
+.dropdown-content a:first-child {
   margin-top: 4px;
-  border-left: solid 5px black;
+}
+
+.dropdown-content a {
+width: 100%;
+border-left: solid 5px black;
+}
+
+.dropdown-content a:last-child {
   border-bottom: solid 5px black;
-  
 }
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {

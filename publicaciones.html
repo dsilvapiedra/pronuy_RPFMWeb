@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Pronóstico de niveles para el Río de la Plata</title>
+    <meta charset="utf-8" />
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Pronóstico de niveles de marea en tiempo real para el Río de la Plata y Frente Marítimo." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/logos/pronuy.svg" type="image/x-icon">
+    <!--	<script src="assets/js/map.js"></script> -->
+
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Banner 	-->
+        <div id="hidingBanner" class="container">
+            <!-- <section id="hidingBanner"> -->
+
+            <div class="row">
+                <div class="col" style="
+					display: flex;
+					align-items : center;">
+                    <div id="pronuyLogo" style="transition:none;  margin-left: auto;">
+                        <a href="index.html" style="transition:none;	padding-right: 0;   ">
+                            <img style="cursor: pointer;width: 7em;
+							height: 7em; padding: 2px;
+							vertical-align: middle; " src="images/logos/pronuy.svg" /> </a>
+                    </div>
+
+                </div>
+                <div class="col" style="     padding-left: 1.1em;
+					display: flex;
+					align-items : center;">
+                    <header id="header" style="background:none">
+
+                        <div class="col">
+                            <p id="titulo"
+                                style="top: -4px;
+								position: relative;font-size:22px; text-align: left;color: #000; text-shadow: 1px 1px 1px #A4A4A4;     white-space: pre-line; margin-bottom: 0.0em">
+                                PRONÓSTICO DE NIVELES
+                                RÍO DE LA PLATA Y COSTA URUGUAYA</p>
+                            <p style="    text-align: left; font-size:19px;
+							color: #979797;
+							text-shadow:1px 1px 0px #54545433; margin-bottom: 0.5em">
+                                PronUy_RPFM
+                            </p>
+
+                        </div>
+                    </header>
+                </div>
+                <div class="col-6" style="display: flex; align-items : center;">
+                    <div id="logosUd">
+                        <a href="https://www.fing.edu.uy/"
+                            style="transition:none;	padding-right: 0;  text-decoration: none;  ">
+                            <img style="height:100% ;cursor: pointer;padding: 2px;vertical-align: middle;"
+                                src="images/logos/fing_sinfondo.png" /></a>
+                        <a href="https://www.fing.edu.uy/"
+                            style="transition:none;	padding-right: 0;  text-decoration: none;  ">
+                            <img style="height:100%;cursor: pointer;padding: 2px;vertical-align:
+							 middle; " src="images/logos/udelar_sinfondo.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- </section> -->
+    </div>
+
+    <!-- Nav -->
+    <nav id="navbar">
+        <div class="container" style="min-height:2em">
+            <a href="index.html"> Inicio </a>
+            <a href="#mareografos">Series Temporales</a>
+            <a href="#estadistico">Resumen Estadístico</a>
+            <a href="#pronostico">Campos</a>
+            <a href="#quienes">Quiénes somos</a>
+            <div class="dropdown">
+                <button class="dropbtn">Referencias
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./docs/fichaCfg19.pdf" download="FichaPronostico.pdf" target="_blank"> Ficha de Pronóstico
+                    </a>
+                    <a href="./publicaciones.html" target="_blank"> Publicaciones
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <section id="main" style="
+    padding-top: 0;
+">
+        <div class="container">
+            <p>
+            <ul>
+                <li>PronUy_RPFM: Sistema de Pronóstico del Río de la Plata y costa uruguaya. (2022). Jackson M.,
+                    Sellanes L. , Balparda D., Silva Piedra D., Ezzatti P., Fossati, M. CONGREMET CONGRESO ARGENTINO DE
+                    METEOROLOGIA. Buenos Aires noviembre 2022.</li>
+
+                <li>ESTUDIO DE SENSIBILIDAD DEL PRONÓSTICO DE NIVELES DEL RÍO DE LA PLATA Y FRENTE MARÍTIMO A LA
+                    CONDICIÓN DE BORDE FLUVIAL (2022). Sellanes L. , Balparda D. , Silva D. , Jackson M. , Fossati M. ,
+                    Ezzatti P. XXX Congreso Latinoamericano de Hidráulica. Foz de Iguazú, noviembre 2022.</li>
+                <li>EVALUACIÓN Y CALIBRACIÓN DEL PRONÓSTICO DE NIVEL DEL RÍO DE LA PLATA Y FRENTE MARÍTIMO (2022).
+                    Balparda D. , Sellanes L. , Silva D. , Jackson M. , Ezzatti P., Fossati M. XXX Congreso
+                    Latinoamericano de Hidráulica. Foz de Iguazú, noviembre 2022.</li>
+
+                <li>Development of a water level forecasting system in the Río de la Plata estuary (2019). Ballesteros
+                    M. , Santoro P., Fossati M. , Ezzatti P. LAPECO 1ST Latin America Physics of Estuaries and Coastal
+                    Oceans conference. Florianopolis, noviembre 2019.</li>
+                <li>SISTEMA OPERACIONAL DE PRONÓSTICO DE CORRIENTES Y MAREAS EN EL RÍO DE LA PLATA. CONDICIONES DE BORDE
+                    (2018). Ballesteros M. , Fossati M. , Santoro P., Ezzatti P. XXVIII Congreso Latinoamericano de
+                    Hidráulica. Buenos Aires, setiembre 2018.</li>
+                <li>Sistema de pronóstico en tiempo real de corrientes y mareas en el Río de la Plata. Tesis de Maestria
+                    en Ingeniería (Mecánica de los Fluidos Aplicada) FING-UdelaR. María Ballesteros (2021) . Tutores:
+                    Mónica Fossati y Pablo Ezzatti.</li>
+            </ul>
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div id="quienes" class="row gtr-200">
+                <div class="col-12">
+
+                    <!-- About -->
+                    <section>
+                        <h2 class="major"><span>Quiénes somos</span></h2>
+                        <p style="text-align: justify">
+                            El equipo de investigadores que trabaja en la simulación numérica de la
+                            hidrodinámica
+                            del Río de la Plata y su Frente Marítimo, RPFM, es un grupo mixto multidisciplinario
+                            e
+                            integra investigadores del Instituto de Mecánica de los Fluidos e Ingeniería
+                            Ambiental,
+                            IMFIA, y del Instituto de Computación, INCO; incluyendo las temáticas de mecánica de
+                            los
+                            fluidos, hidráulica marítima, métodos numéricos y computación de alto desempeño
+                            (HPC).
+                        </p>
+                        <p style="text-align: justify">
+                            Nuestro grupo se ha consolidado en la última década a través del desarrollo de
+                            proyectos
+                            que incluyeron la aplicación de diversos modelos numéricos en la región para
+                            distintas
+                            aplicaciones de ingeniería hidráulica (sedimentos finos, estudios portuarios, cambio
+                            climático, transporte de sustancias, pronóstico en tiempo real) mejorando así la
+                            comprensión de la dinámica global de flujo en el Río de la Plata y Frente Marítimo.
+                        </p>
+                        <p style="text-align: justify">
+                            <a href="mailto:pronosticoRPFM@gmail.com">Contacto</a>
+                        </p>
+                    </section>
+
+                </div>
+                <div class="col-12">
+
+                    <!-- Logos -->
+                    <section>
+                        <div class="row">
+                            <div class="col-3 col-6-medium col-12-small">
+                                <a target="_blank" href="https://www.fing.edu.uy/imfia/">
+                                    <p style="text-align: center;">
+                                        <img style="max-width: 100%; max-height: 100px;"
+                                            src="images/logos/imfia_sinfondo.png">
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-3 col-6-medium col-12-small">
+                                <a target="_blank" href="https://www.fing.edu.uy/inco/">
+                                    <p style="text-align: center;">
+                                        <img style="max-width: 100%; max-height: 100px;" src="images/logos/inco.jpeg">
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-3 col-6-medium col-12-small">
+                                <a target="_blank" href="https://www.fing.edu.uy/">
+                                    <p style="text-align: center;">
+                                        <img style="max-width: 100%; max-height: 100px;"
+                                            src="images/logos/fing_sinfondo.png">
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-3 col-6-medium col-12-small">
+                                <a target="_blank" href="http://www.universidad.edu.uy/">
+                                    <p style="text-align: center;">
+                                        <img style="max-width: 100%; max-height: 100px;"
+                                            src="images/logos/udelar_sinfondo.png">
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <h2><span>Con apoyo del Programa CSIC (Grupos I+D)</span></h2>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        window.onload = function () {
+            if (window.innerWidth <= 500) {
+                var mvp = document.getElementById('myViewport');
+                mvp.setAttribute('content', 'width=500');
+            }
+        }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--<script src="assets/js/time.js"></script>-->
+    <script src="assets/js/mareas_slider.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/lastUpdated.js"></script>
+</body>
+
+</html>
