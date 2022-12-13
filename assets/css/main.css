@@ -57,12 +57,17 @@
   display: block;
   text-align: left;
 }
-.dropdown-content a {
-  width: 100%;
+.dropdown-content a:first-child {
   margin-top: 4px;
-  border-left: solid 5px black;
+}
+
+.dropdown-content a {
+width: 100%;
+border-left: solid 5px black;
+}
+
+.dropdown-content a:last-child {
   border-bottom: solid 5px black;
-  
 }
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
@@ -342,6 +347,28 @@ a#logo {
   padding: 1em 0 1em 0;
 }
 /*************************/
+
+/** Publicaciones**/
+
+#publicaciones {
+margin-top: 0;
+
+}
+
+.publicaciones_ul > li{
+  margin-bottom: 1em;
+}
+.publicaciones_ul > li > a{
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+.publicaciones_ul > li > a:hover{
+  font-weight: 700;
+  text-decoration: underline;
+}
+/*****************/
 /***************************************************************/
 html,
 body,
@@ -2519,6 +2546,13 @@ body {
 }
 
 /* Main */
+#mainPub {
+  background: #fff;
+  border-bottom: solid 5px #c1cac5;
+  border-top-width: 35px;
+  border-bottom-width: 10px;
+  padding: 6em 0 6em 0;
+}
 #main {
   background: #fff;
   border-bottom: solid 5px #c1cac5;
