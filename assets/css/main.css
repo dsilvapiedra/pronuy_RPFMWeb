@@ -87,8 +87,7 @@ border-left: solid 5px black;
   cursor: pointer;
   display: none;
   position: absolute;
-  left: -5px;
-  bottom: 0;
+  left: 0;
   min-width: 160px;
   background-color: #f9f9f9;
 }
@@ -98,10 +97,16 @@ border-left: solid 5px black;
 }
 
 .dropdown-two .dropdown-content {
-  border-left:none;
+  border:none;
+  border-radius: 6px;
   background-color: #525252;
+  box-shadow: 0px 0px 1px 0px rgb(0 0 0 / 75%);
 }
 
+.dropdown-two .dropdown-content a{
+  border:none;
+ 
+}
 
 
 .body{
