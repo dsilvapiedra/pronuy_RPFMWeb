@@ -60,13 +60,12 @@
 .dropdown-content a:first-child {
   margin-top: 4px;
 }
-
-.dropdown-content a {
+.dropdown-content a, .dropdown-content div,.dropdown-content.dropdown-content .dropbtn {
 width: 100%;
 border-left: solid 5px black;
 }
 
-.dropdown-content a:last-child {
+.dropdown-content:last-child {
   border-bottom: solid 5px black;
 }
 /* Add a grey background color to dropdown links on hover */
@@ -82,6 +81,29 @@ border-left: solid 5px black;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Secondary dropdown */
+.dropdown-two {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: -5px;
+  bottom: 0;
+  min-width: 160px;
+  background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-one, #conferencias:hover > .dropdown-two {
+  display: block;
+}
+
+.dropdown-two .dropdown-content {
+  border-left:none;
+  background-color: #525252;
+}
+
+
+
 .body{
   min-width: 600px !important;
 }
@@ -346,7 +368,7 @@ a#logo {
   text-align: center;
   padding: 1em 0 1em 0;
 }
-/*************************/
+/***********************************************************/
 
 /** Publicaciones**/
 
