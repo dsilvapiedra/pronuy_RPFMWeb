@@ -33,7 +33,7 @@
 						<a href="index.html" style="transition:none;	padding-right: 0;   ">
 							<img style="cursor: pointer;width: 7em;
 							height: 7em; padding: 2px;
-							vertical-align: middle; " src="images/logos/pronuy.svg" alt="Logo PronUy_RPFM, pron uy"/> </a>
+							vertical-align: middle; " src="images/logos/pronuy.svg" alt="Logo PronUy_RPFM, pron uy" /> </a>
 					</div>
 
 				</div>
@@ -62,7 +62,7 @@
 						<a href="https://www.fing.edu.uy/"
 							style="transition:none;	padding-right: 0;  text-decoration: none;  ">
 							<img style="height:100% ;cursor: pointer;padding: 2px;vertical-align: middle;"
-								src="images/logos/fing_sinfondo.png" alt="Logo Facultad Ingeniería Uruguay"/></a>
+								src="images/logos/fing_sinfondo.png" alt="Logo Facultad Ingeniería Uruguay" /></a>
 						<a href="https://www.fing.edu.uy/"
 							style="transition:none;	padding-right: 0;  text-decoration: none;  ">
 							<img style="height:100%;cursor: pointer;padding: 2px;vertical-align:
@@ -96,10 +96,10 @@
 					<a href="./publicaciones.html" target="_blank"> Publicaciones
 					</a>
 
-					<div id="conferencias" class="dropbtn">Conferencias
+					<div id="conferencias" class="dropbtn" onclick="toggleConfTab();" onmouseover="toggleConfTab('block');">Conferencias
 						<i class="fa fa-caret-down"></i>
 
-						<div class="dropdown-two">
+						<div id="confdrop" class="dropdown-two">
 							<div class="dropdown-content">
 
 								<a href="https://www.youtube.com/watch?v=u5WPao_GBWM&t=5741s" target="_blank"> XXX
@@ -108,10 +108,23 @@
 							</div>
 						</div>
 					</div>
-					
+					<div id="prensa" class="dropbtn"  onclick="togglePrensaTab();">Prensa
+					<i class="fa fa-caret-down"></i>
+
+					<div  id="prensadrop" class="dropdown-three">
+						<div class="dropdown-content">
+
+							<a href="https://www.elpais.com.uy/vida-actual/ingenieros-uruguayos-predicen-como-sera-el-nivel-de-mar-en-los-proximos-tres-dias-para-que-sirve"
+								target="_blank">
+								El País 2022
+							</a>
+						</div>
+					</div>
 				</div>
 
+				</div>
 
+				
 			</div>
 		</div>
 
@@ -127,7 +140,8 @@
 			<div class="col-8">
 				<p style="text-align: center; margin-bottom: 0;">
 
-					<img style="width: 100%; text-align: center; border-radius: 7px;" src="images/satelital.jpeg" alt="Maréografos del Río de la Plata, imagen satelital">
+					<img style="width: 100%; text-align: center; border-radius: 7px;" src="images/satelital.jpeg"
+						alt="Maréografos del Río de la Plata, imagen satelital">
 				</p>
 			</div>
 
@@ -254,7 +268,8 @@
 						<h2 class="major"><span>Resumen Estadístico</span></h2>
 						<p style="text-align: center;">
 							<img style="max-height: 700px; max-width: 100%;"
-								src="images/resumen_estadisticos/figure_Barras.jpg" alt="Resumen estadístico del pronóstico de marea del Río de la Plata">
+								src="images/resumen_estadisticos/figure_Barras.jpg"
+								alt="Resumen estadístico del pronóstico de marea del Río de la Plata">
 						</p>
 					</section>
 				</div>
@@ -327,7 +342,8 @@
 						</p>
 
 						<p style="text-align: justify">
-							Por consultas sobre nuevos productos del sistema PronUy_RPFM contactarse con Mónca Fossati <a href="mailto:pronosticoRPFM@gmail.com">mfossati@fing.edu.uy</a>
+							Por consultas sobre nuevos productos del sistema PronUy_RPFM contactarse con Mónca Fossati
+							<a href="mailto:pronosticoRPFM@gmail.com">mfossati@fing.edu.uy</a>
 						</p>
 					</section>
 
@@ -348,7 +364,8 @@
 							<div class="col-3 col-6-medium col-12-small">
 								<a target="_blank" href="https://www.fing.edu.uy/inco/">
 									<p style="text-align: center;">
-										<img style="max-width: 100%; max-height: 100px;" src="images/logos/inco.jpeg" alt="Logo INCO FIng Uruguay">
+										<img style="max-width: 100%; max-height: 100px;" src="images/logos/inco.jpeg"
+											alt="Logo INCO FIng Uruguay">
 									</p>
 								</a>
 							</div>
@@ -364,7 +381,7 @@
 								<a target="_blank" href="http://www.universidad.edu.uy/">
 									<p style="text-align: center;">
 										<img style="max-width: 100%; max-height: 100px;"
-											src="images/logos/udelar_sinfondo.png"  alt="Logo UdelaR Uruguay">
+											src="images/logos/udelar_sinfondo.png" alt="Logo UdelaR Uruguay">
 									</p>
 								</a>
 							</div>
